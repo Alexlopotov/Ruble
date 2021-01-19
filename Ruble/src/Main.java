@@ -3,10 +3,11 @@ public class Main {
         double balance = 100.55;
         double refill = 1100.20;
         int bonus;
-        if (refill > 1000)
-        {bonus = 1100 / 100;}
-        else
-        {bonus = 0;}
+        if (refill > 1000) {
+            bonus = (int)refill / 100;
+        } else {
+            bonus = 0;
+        }
         double total = balance + refill + bonus;
         System.out.println(total);
     }
